@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Watsonisite | Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Lilita+One|Ubuntu&display=swap" rel="stylesheet">
+  <link rel="icon" href="{{ url_for('static', filename = 'images/favicon1.png') }}" type="image/icon type">
+  <link rel= "stylesheet" type= "text/css" href= "{{ url_for('static',filename='css/index.css') }}">
+</head>
+
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+
+<nav class="navbar navbar-default navbar-fixed-top">
+    <div class="container">
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+        </button>
+        <a class="navbar-brand" href="#myPage">Watsonisite</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-right">
+        <li><a href="#about">About</a></li>
+        <li><a href="#overview">Overview</a></li>
+        <li><a href="#analysis">Analysis</a></li>
+        </ul>
+    </div>
+    </div>
+</nav>
+
+<div class="jumbotron text-center">
+    <h1>Watsonisite</h1> 
+    <p>All you need to know about crypto!</p> 
+</div>
+
+<!-- (About Section) -->
+<div id="about" class="container-fluid">
+    <div class="row">
+    <div class="col-sm-8">
+        <h2>About Watsonisite</h2><br>
+        <h4>A cryptocurrency or crypto is a digital currency designed to work as a medium of exchange through a computer network that is not reliant on any central authority, such as a government or bank, to uphold or maintain it.</h4>
+        <h4>Watsonisite is one such website that provides all the information one needs to know about crypto and their trends in the market. </h4>
+        
+        <br><a  href="{{ url_for('chart_creator') }}" ><button class="btn btn-default btn-lg">Trends in the market</button></a>
+        <br>
+        <br><a  href="{{ url_for('table_creator') }}" ><button class="btn btn-default btn-lg">Top Trending CryptoCurrencies</button></a>
+    </div>
+    <div class="col-sm-4">
+        <span><img src="{{ url_for('static', filename = 'images/crypto.png') }}" width="100%"></span>
+    </div>
+    </div>
+</div>
+<!-- (About Section) -->
+
+
+<!-- (Overview Section) -->
+<div id="overview" class="container-fluid text-center bg-grey">
+    <h2>Overview</h2>
+    
+    <br>
+    <div class="row slideanim">
+    <div class="col-sm-4">
+        <span class="glyphicon glyphicon-bitcoin logo-small"></span>
+        <h3>What is crypto or crypto currency?</h3>
+        <p>As discussed above, crypto currency is a digital currency designed to work as a medium of exchange through a computer network.<br> It is a decentralized system for verifying that the parties to a transaction have the money they claim to have, eliminating the need for traditional intermediaries, such as banks, when funds are being transferred between two entities. <br>The first decentralized cryptocurrency was Bitcoin, which first released as open-source software in 2009. As of March 2022 there were more than 9,000 other cryptocurrencies in the marketplace, of which more than 70 had a market capitalization exceeding $1 billion.</p>
+    </div>
+    <div class="col-sm-4">
+        <span class="glyphicon glyphicon-cog logo-small"></span>
+        <h3>How does crypto work?</h3>
+        <p>It's a peer-to-peer system that can enable anyone anywhere to send and receive payments. Instead of being physical money carried around and exchanged in the real world. <br>Cryptocurrency payments exist purely as digital entries to an online database describing specific transactions. When you transfer cryptocurrency funds, the transactions are recorded in a public ledger. Cryptocurrency is stored in digital wallets.<br>Units of cryptocurrency are created through a process called mining, which involves using computer power to solve complicated mathematical problems that generate coins. Users can also buy the currencies from brokers, then store and spend them using cryptographic wallets.</p>
+    </div>
+    <div class="col-sm-4">
+        <span class="glyphicon glyphicon-signal logo-small"></span>
+        <h3>Trends</h3>
+        <p>1.Halving or Halving<br>It means that the reward for the block production of the miner will get halved.According to the studies, the halving event to balance Bitcoin happens once in every four years.<br>2.The collaboration of Blockchain with AI<br>The AI in blockchain provides more security and allows traders to trust in digital trading.<br>3.Preference for Stable Coins<br>There might be many fluctuations while investing in crypto currencies,so the best alternative is stable coins and other assets like fiat will back it.<br>4.NFTs Tokenize Everything<br>One of the most interesting developments in the crypto is the rise of non-fungible tokens (NFTs).These tokens basically represent digital claims to a unique thing or asset.The item they represent can be digital or physical.</p>
+    </div>
+    </div>
+    <br><br>
+</div>
+<!-- (Features Section) -->
+
+
+
+<!-- (people Section)-->
+<div id="people" class="container-fluid text-center bg-blue">
+    <h2>What famous people say..!</h2><br>
+
+    
+    <div id="myCarousel" class="carousel slide text-center" data-ride="carousel">
+
+    
+    <div class="carousel-inner" role="listbox">
+        <div class="item active">
+        <h4>"Innovations are very cruel by nature. They destroy the old ones to create space for themselves."<br><span>― Sukant Ratnakar, Quantraz</span></h4>
+        
+        <div class="carousel-inner" role="listbox">
+            <div class="item active">
+            <h4>Money manipulation is the root of all evil, you can manipulate fiat but you cant manipulate bitcoin.”
+                <br><span>― Gun Gun Febrianza</span></h4>
+            </div>
+        </div>
+
+       
+    <!-- Left and right controls 
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+        <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+        <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+        <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+        <span class="sr-only">Next</span>
+    </a>
+    </div>-->
+    
+    <br>
+    <div id="analysis" class="container-fluid text-center bg-grey">
+        <h2>Analysis</h2>
+        
+        <br>
+        <div class="row slideanim">
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-thumbs-up logo-small"></span>
+            <h3>Benefits</h3>
+            <p>1.Users can expect transactions to be private and secure despite non-identifying transaction data being public.<br>2.Cryptocurrency has low transaction costs compared to other digital payment methods like PayPal.<br>3.Through the process of mining (securing transactions) anyone with access to a computer and the internet can make money mining coins.<br>4.Since the cryptocurrency market is volatile it can be a high reward investment.<br>5.There is no other entity else that controls your money or its value.</p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-thumbs-down logo-small"></span>
+            <h3>Disadvantages</h3>
+            <p>1.Third parties involved in cryptocurrency, like those who produce wallets and exchanges, don’t always have the same level of security as a coin’s network itself<br>2.Cryptocurrency is only accepted by certain vendors<br>3.The cryptocurrency market is volatile, the value of coins can change wildly in a short amount of time.<br>4.There is no way to recover coins if they are lost and there is no system in place to protect the value of your coin.<br>5.The coin you trade for a legal thing today can be used to fund awfully illegal things tomorrow. </p>
+        </div>
+        <div class="col-sm-4">
+            <span class="glyphicon glyphicon-globe logo-small"></span>
+            <h3>Security</h3>
+            <p>Cryptocurrency has been in hype since the release of Bitcoin.However, it’s not always safe to invest in digital currencies.Therefore, before stepping your foot into the market, you must have proper knowledge about crypto trading, or you could consult a crypto advisor.<br>The backend process for cryptocurrency transactions is quite complex, and the transactions are recorded into blocks and are time-stamped. Due to its this, it is very hard for hackers to get through, making the cryptocurrency pretty secure.<br>Some basic things must be considered like, a two-stage authentication process while making transactions.This type of security is just not enough, therefore, investors make sure that they invest or even open their own cryptocurrency. They must be aware of the cryptocurrency security standards. </p>
+        </div>
+        </div>
+        <br><br>
+    </div>
+    
+<!-- (News Section) -->
+
+
+
+<!--footer class="container-fluid text-center">
+    <a href="#myPage" title="To Top">
+    <span class="glyphicon glyphicon-chevron-up"></span>
+    </a>
+    <p>© Copyright 2021 <a href="https://github.com/SaiJeevanPuchakayala/CryptoCurrency-Screener">CryptoCurrency Screener</a></p>
+</footer>-->
+
+
+<script>
+$(document).ready(function(){
+    
+    $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
+    
+    if (this.hash !== "") {
+        
+        event.preventDefault();
+
+        
+        var hash = this.hash;
+
+        $('html, body').animate({
+        scrollTop: $(hash).offset().top
+        }, 900, function(){
+    
+        window.location.hash = hash;
+        });
+    }
+    });
+    
+    $(window).scroll(function() {
+    $(".slideanim").each(function(){
+        var pos = $(this).offset().top;
+
+        var winTop = $(window).scrollTop();
+        if (pos < winTop + 600) {
+            $(this).addClass("slide");
+        }
+    });
+    });
+})
+</script>
+
+</body>
+</html>
+    
